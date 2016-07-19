@@ -1,6 +1,6 @@
-var role = ("Programming Wizard");
 var name = ("Andrew Powers");
-var formattedRole = HTMLheaderRole.replace("%data%", role);
+var role = ("Programming Wizard");
 var formattedName = HTMLheaderName.replace("%data%", name);
-$("#header").prepend( formattedRole);
+var formattedRole = HTMLheaderRole.replace("%data%", role);
 $("#header").prepend( formattedName);
+$("#header").append( formattedRole);
