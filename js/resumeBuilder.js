@@ -6,14 +6,15 @@ var bio = {
  "contacts": {
   "mobile": "410-202-6088",
   "email": "jwchaley@aol.com",
-  "github": "LordRorek",
-  "_location": "Deal Island, MD, USA"
+  "github": 'https://github.com/LordRorek',
+  "_location": "Maryland, USA"
  },
  "skills": [
  "Languages: Python, JavaScript",
  "Version Control: Git, GitHub",
  "Web Development: HTML/CSS",
- "Skill Level: Beginner"
+ "Graphic Design: Photoshop, Inkscape",
+ "Skill Level: Intermediate"
  ],
  "bioPic": "images/Me.jpg"
 };
@@ -65,6 +66,8 @@ if (bio.skills.length > 0) {
   $("#skills").append(formattedSkills);
   var formattedSkills = HTMLskills.replace("%data%", bio.skills[3]);
   $("#skills").append(formattedSkills);
+  var formattedSkills = HTMLskills.replace("%data%", bio.skills[4]);
+  $("#skills").append(formattedSkills);
 };
 /*Skills*/
 /*Biography*/
@@ -73,29 +76,29 @@ if (bio.skills.length > 0) {
 /*Education Object*/
 var education = {
  "schools": [{
-  "title": "Student Success - StraighterLine",
+  "title": "<a href='http://www.straighterline.com/succe101mghsl001000001-b.html' target='_blank'>Student Success - StraighterLine</a>",
   "teacher": "N/A"
  }, {
-  "title": "Introduction to Nutrition - StraighterLine",
+  "title": "<a href='http://www.straighterline.com/nutri101mghsl001000002-b.html' target='_blank'>Introduction to Nutrition - StraighterLine</a>",
   "teacher": "N/A"
  }, {
-  "title": "United States History 101 - StraighterLine",
+  "title": "<a href='http://www.straighterline.com/online-college-courses/humanities/united-states-history-i/ushis101mghsl001000001-b.html' target='_blank'>United States History I - StraighterLine</a>",
   "teacher": "N/A"
  }, {
-  "title": "Introduction to Psychology - StraighterLine",
+  "title": "<a href='http://www.straighterline.com/online-college-courses/social-science/introduction-to-psychology/psy101xxmghsl001000002-b.html' target='_blank'>Introduction to Psychology - StraighterLine</a>",
   "teacher": "N/A"
  }, {
-  "title": "Intro to Computer Science - Udacity",
-  "teacher": "Dave Evans"
+  "title": "<a href='https://www.udacity.com/course/intro-to-computer-science--cs101' target='_blank'>Intro to Computer Science - Udacity</a>",
+  "teacher": " Prof. David Evans - Ph.D., MIT"
 }, {
- "title": "Intro to HTML and CSS - Udacity",
- "teacher": "Jessica Uelmen & Cameron Pittman"
+ "title": "<a href='https://www.udacity.com/course/intro-to-html-and-css--ud304' target='_blank'>Intro to HTML and CSS - Udacity</a>",
+ "teacher": "Jessica Uelmen - BD, University of Central Florida & Cameron Pittman - MD, Belmont University."
 }, {
-  "title": "How to Use Git and GitHub - Udacity",
-  "teacher": "Caroline Buckey & Sarah Spikes"
+  "title": "<a href='https://www.udacity.com/course/how-to-use-git-and-github--ud775' target='_blank'>How to Use Git and GitHub - Udacity</a>",
+  "teacher": "Caroline Buckey - BD, Carnegie Mellon & Sarah Spikes - BS, MS, Stanford"
 }, {
-  "title": "JavaScript Basics - Udacity",
-  "teacher": "James Williams & Cameron Pittman"
+  "title": "<a href='https://www.udacity.com/course/javascript-basics--ud804' target='_blank'>JavaScript Basics - Udacity</a>",
+  "teacher": "James Williams - BS, MS, Nova Southeastern University & Cameron Pittman - MD, Belmont University."
 }]
 };
 /*Education Object*/
@@ -127,7 +130,7 @@ var work = {
   "description": "I worked as a Cashier for Walmart."
  }, {
   "employer": "The Clay Bakery",
-  "title": "Cashier/Assistant Manager",
+  "title": "Assistant Manager",
   "dates": "2009 - 2014",
   "location": "Warsaw, VA, USA",
   "description": "I did a little bit of everything at The Clay Bakery cashiering, stocking, customer service, tech support, etc."
@@ -163,14 +166,14 @@ displaywork();
 /*Projects Object*/
 var projects = {
  "projects": [{
-   "title": "Jane's Portfolio",
+   "title": "<a href='https://github.com/LordRorek/janes-portfolio' target='_blank'>Jane's Portfolio</a>",
    "dates": "June - 2015",
-   "description": "This web page is an interactive portfolio page for the final project of the Intro to HTML and CSS course at Udacity.",
+   "description": "This web page is an interactive portfolio page for the final project of Intro to HTML and CSS course at Udacity.",
    "images": {
      "image1": "images/Portfolio.png"
     }
  }, {
-   "title": "Interactive Resume",
+   "title": "<a href='https://github.com/LordRorek/frontend-nanodegree-resume' target='_blank'>Interactive Resume</a>",
    "dates": "July - 2016",
    "description": "This web page is a resume page for the final project of the JavaScript Basics course at Udacity.",
    "images": {

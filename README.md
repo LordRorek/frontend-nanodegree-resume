@@ -1,3 +1,3 @@
 This is My Resume :)
 
-![](http://i.imgur.com/DcL43bV.png)
+![](http://i.imgur.com/fJ5oyTw.png)
