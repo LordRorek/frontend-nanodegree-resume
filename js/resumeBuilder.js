@@ -205,5 +205,5 @@ projects.display();
 /*Projects*/
 
 /*Map*/
-$("#mapDiv").append(googleMap);
+//$("#mapDiv").append(googleMap);
 /*Map*/
