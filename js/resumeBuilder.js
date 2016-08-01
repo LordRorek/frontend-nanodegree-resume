@@ -9,9 +9,11 @@ var bio = {
   "github": "LordRorek",
   "_location": "Deal Island, MD, USA"
  },
- "welcomeMessage": "Welcome Fellow Technophiles",
  "skills": [
-  "Python", "HTML", "CSS", "Git", "GitHub"
+ "Languages: Python, JavaScript",
+ "Version Control: Git, GitHub",
+ "Web Development: HTML/CSS",
+ "Skill Level: Beginner"
  ],
  "bioPic": "images/Me.jpg"
 };
@@ -20,12 +22,10 @@ var bio = {
 /*Name, Role and Message*/
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
-var formattedMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-$("#header").prepend(formattedBioPic);
+$("#header").append(formattedBioPic);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
-$("#header").append(formattedMessage);
 /*Name, Role, Pic and Messade*/
 
 /*Internationalize Button*/
@@ -65,8 +65,6 @@ if (bio.skills.length > 0) {
   $("#skills").append(formattedSkills);
   var formattedSkills = HTMLskills.replace("%data%", bio.skills[3]);
   $("#skills").append(formattedSkills);
-  var formattedSkills = HTMLskills.replace("%data%", bio.skills[4]);
-  $("#skills").append(formattedSkills);
 };
 /*Skills*/
 /*Biography*/
@@ -75,16 +73,30 @@ if (bio.skills.length > 0) {
 /*Education Object*/
 var education = {
  "schools": [{
-  "title": "General Studies",
-  "school": "StraighterLine",
-  "dates": "2013",
-  "url": "http://www.straighterline.com/"
+  "title": "Student Success - StraighterLine",
+  "teacher": "N/A"
  }, {
-  "title": "Front-End Web Developer Nanodegree",
-  "school": "Udacity",
-  "dates": "2016",
-  "url": "https://www.udacity.com/"
- }]
+  "title": "Introduction to Nutrition - StraighterLine",
+  "teacher": "N/A"
+ }, {
+  "title": "United States History 101 - StraighterLine",
+  "teacher": "N/A"
+ }, {
+  "title": "Introduction to Psychology - StraighterLine",
+  "teacher": "N/A"
+ }, {
+  "title": "Intro to Computer Science - Udacity",
+  "teacher": "Dave Evans"
+}, {
+ "title": "Intro to HTML and CSS - Udacity",
+ "teacher": "Jessica Uelmen & Cameron Pittman"
+}, {
+  "title": "How to Use Git and GitHub - Udacity",
+  "teacher": "Caroline Buckey & Sarah Spikes"
+}, {
+  "title": "JavaScript Basics - Udacity",
+  "teacher": "James Williams & Cameron Pittman"
+}]
 };
 /*Education Object*/
 
@@ -95,12 +107,8 @@ function displayschool() {
     $("#education").append(HTMLschoolStart);
     var formattedTitle = HTMLonlineTitle.replace("%data%", education.schools[course].title);
     $(".education-entry:last").append(formattedTitle);
-    var formattedSchool = HTMLonlineSchool.replace("%data%", education.schools[course].school);
-    $(".education-entry:last").append(formattedSchool);
-    var formattedDates = HTMLonlineDates.replace("%data%", education.schools[course].dates);
-  	$(".education-entry:last").append(formattedDates);
-    var formattedUrl = HTMLonlineURL.replace("%data%", education.schools[course].url);
-    $(".education-entry:last").append(formattedUrl);
+    var formattedCourseTeacher = HTMLonlineDates.replace("%data%", education.schools[course].teacher);
+  	$(".education-entry:last").append(formattedCourseTeacher);
   };
 };
 displayschool();
@@ -114,15 +122,15 @@ var work = {
  "jobs": [{
   "employer": "Walmart",
   "title": "Cashier",
-  "dates": "2008 - 2009",
+  "dates": "2007 - 2008",
   "location": "Tappahanock, VA, USA",
-  "description": "I worked as a Front-End Cashier for Walmart."
+  "description": "I worked as a Cashier for Walmart."
  }, {
   "employer": "The Clay Bakery",
   "title": "Cashier/Assistant Manager",
-  "dates": "2008 - 2009",
+  "dates": "2009 - 2014",
   "location": "Warsaw, VA, USA",
-  "description": "I did a little bit of everything at The Clay Bakery cashiering, stocking, customer service, managing staff, ETC"
+  "description": "I did a little bit of everything at The Clay Bakery cashiering, stocking, customer service, tech support, etc."
 
  }]
 };
@@ -155,21 +163,19 @@ displaywork();
 /*Projects Object*/
 var projects = {
  "projects": [{
-  "title": "Sample 1",
-  "dates": "today",
-  "description": "N/A",
-  "images": {
-    "image1": "images/sample1.gif",
-    "image2": "images/sample2.gif"
-   }
+   "title": "Jane's Portfolio",
+   "dates": "June - 2015",
+   "description": "This web page is an interactive portfolio page for the final project of the Intro to HTML and CSS course at Udacity.",
+   "images": {
+     "image1": "images/Portfolio.png"
+    }
  }, {
-  "title": "Sample 2",
-  "dates": "today",
-  "description": "N/A",
-  "images": {
-    "image1": "images/sample1.gif",
-    "image2": "images/sample2.gif"
-   }
+   "title": "Interactive Resume",
+   "dates": "July - 2016",
+   "description": "This web page is a resume page for the final project of the JavaScript Basics course at Udacity.",
+   "images": {
+     "image1": "images/Resume.png"
+    }
  }]
 };
 

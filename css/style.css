@@ -113,7 +113,6 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
   color: #fff;
 }
 
@@ -148,6 +147,14 @@ a {
   padding: 10px;
 }
 
+.flex-column-skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .center-content {
   padding: 2.5% 5%;
 }
@@ -168,6 +175,7 @@ img {
 }
 
 span {
+  color: #ffffff;
   padding: 5px;
 }
 
